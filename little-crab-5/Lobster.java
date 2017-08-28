@@ -54,11 +54,23 @@ public class Lobster extends Actor
      */
     public void lookForCrab()
     {
+<<<<<<< HEAD
         if ( isTouching(Crab.class) ) 
         {
             removeTouching(Crab.class);
             Greenfoot.playSound("au.wav");
             Greenfoot.stop();
+=======
+        if (isTouching(Crab.class)) 
+        {
+            Crab crab = (Crab)getOneIntersectingObject(Crab.class);
+            
+            if (crab.isPowerfull()==false) {
+                removeTouching(Crab.class);
+                Greenfoot.playSound("au.wav");
+                Greenfoot.stop();
+            }
+>>>>>>> potionClass
         }
     }
 }

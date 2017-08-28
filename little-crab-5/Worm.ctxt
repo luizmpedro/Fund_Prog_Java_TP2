@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 #BlueJ class context
 comment0.target=Worm
 comment0.text=\r\n\ Worm.\ A\ sand\ worm.\ Very\ yummy.\ Especially\ crabs\ really\ like\ it.\r\n
 numComments=1
+=======
+#BlueJ class context
+comment0.target=Worm
+comment0.text=\r\n\ Worm.\ A\ sand\ worm.\ Very\ yummy.\ Especially\ crabs\ really\ like\ it.\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ randomTurn()
+numComments=3
+>>>>>>> potionClass
