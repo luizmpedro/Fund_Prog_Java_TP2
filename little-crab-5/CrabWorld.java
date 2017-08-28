@@ -1,9 +1,5 @@
 import greenfoot.*;  // imports Actor, World, Greenfoot, GreenfootImage
-<<<<<<< HEAD
-=======
 import java.util.Random;
-
->>>>>>> potionClass
 
 /**
  * The CrabWorld is the place where crabs and other creatures live. 
@@ -27,15 +23,10 @@ public class CrabWorld extends World
      */
     private void prepare()
     {
-<<<<<<< HEAD
-        Crab crab = new Crab();
-        addObject(crab, 231, 203);
-=======
         Crab crab = new Crab(true);
         addObject(crab, 231, 203);
         Crab crab2 = new Crab(false);
         addObject(crab2, 400, 400);
->>>>>>> potionClass
         Worm worm = new Worm();
         addObject(worm, 445, 137);
         Worm worm2 = new Worm();
@@ -62,9 +53,7 @@ public class CrabWorld extends World
         addObject(lobster2, 481, 481);
         Lobster lobster3 = new Lobster();
         addObject(lobster3, 79, 270);
-<<<<<<< HEAD
-=======
-        
+
         Random random = new Random();
         Potion firstPotion = new Potion();
         addObject(firstPotion, random.nextInt(559)+1, random.nextInt(559)+1);
@@ -74,7 +63,5 @@ public class CrabWorld extends World
         
         Potion thirdPotion = new Potion();
         addObject(thirdPotion, random.nextInt(559)+1, random.nextInt(559)+1);
-        
->>>>>>> potionClass
-    }
+     }
 }

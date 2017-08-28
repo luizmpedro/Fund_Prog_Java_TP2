@@ -1,8 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
-<<<<<<< HEAD
-=======
 import java.util.Date;
->>>>>>> potionClass
 
 /**
  * This class defines a crab. Crabs live on the beach. They like sand worms 
@@ -18,30 +15,16 @@ public class Crab extends Actor
 {
     private GreenfootImage image1;
     private GreenfootImage image2;
-<<<<<<< HEAD
-    private int wormsEaten;
-=======
     private GreenfootImage image3;
     private GreenfootImage image4;    
     private int wormsEaten;
     private boolean isPowerfull;
     private long startPowerTime;
     private boolean isFirstPlayer;
->>>>>>> potionClass
     
     /**
      * Create a crab and initialize its two images.
      */
-<<<<<<< HEAD
-    public Crab()
-    {
-        image1 = new GreenfootImage("crab.png");
-        image2 = new GreenfootImage("crab2.png");
-        setImage(image1);
-        wormsEaten = 0;
-    }
-        
-=======
     public Crab(boolean firstPlayer)
     {
         image1 = new GreenfootImage("crab.png");
@@ -54,7 +37,6 @@ public class Crab extends Actor
         this.isFirstPlayer = firstPlayer;
     }
             
->>>>>>> potionClass
     /** 
      * Act - do whatever the crab wants to do. This method is called whenever
      *  the 'Act' or 'Run' button gets pressed in the environment.
@@ -64,9 +46,6 @@ public class Crab extends Actor
         checkKeypress();
         move(5);
         lookForWorm();
-<<<<<<< HEAD
-        switchImage();
-=======
         lookForPotion();
         switchImage();
         
@@ -101,23 +80,12 @@ public class Crab extends Actor
             this.setLocation(this.getX(), 1);
         }
 
->>>>>>> potionClass
     }
     
     /**
      * Alternate the crab's image between image1 and image2.
      */
     public void switchImage()
-<<<<<<< HEAD
-    {
-        if (getImage() == image1) 
-        {
-            setImage(image2);
-        }
-        else
-        {
-            setImage(image1);
-=======
     {  
         if (this.isPowerfull == false) {
             if (getImage() == image1) 
@@ -137,7 +105,6 @@ public class Crab extends Actor
             {
                 setImage(image3);
             }
->>>>>>> potionClass
         }
     }
             
@@ -147,16 +114,6 @@ public class Crab extends Actor
      */
     public void checkKeypress()
     {
-<<<<<<< HEAD
-        if (Greenfoot.isKeyDown("left")) 
-        {
-            turn(-4);
-        }
-        if (Greenfoot.isKeyDown("right")) 
-        {
-            turn(4);
-        }
-=======
         if (this.isFirstPlayer) {
             if (Greenfoot.isKeyDown("left")) 
             {
@@ -176,9 +133,6 @@ public class Crab extends Actor
                 turn(4);
             }
         }
-        
-        
->>>>>>> potionClass
     }
     
     /**
@@ -202,9 +156,7 @@ public class Crab extends Actor
             }
         }
     }
-<<<<<<< HEAD
-=======
-    
+
     public void lookForPotion() {
         if (isTouching(Potion.class)) {
             removeTouching(Potion.class);
@@ -217,5 +169,4 @@ public class Crab extends Actor
     public boolean isPowerfull() {
         return this.isPowerfull;
     }
->>>>>>> potionClass
 }
